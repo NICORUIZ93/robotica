@@ -1,4 +1,3 @@
-from cgitb import grey
 from math import pi, sqrt
 import cv2
 from cv2 import waitKey

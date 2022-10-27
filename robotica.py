@@ -5,7 +5,7 @@ from cv2 import minMaxLoc
 import numpy as np
 import time
 cap = cv2.VideoCapture(0)
-cap.set(cv2.CAP_PROP_EXPOSURE, 1)
+
 
 factorDimension = 100
 
@@ -98,10 +98,6 @@ while (True):
                     yi[x])), cv2.FONT_HERSHEY_SIMPLEX, 2, (0, 0, 0), 2)
 
             cv2.imshow("Houghcircles", image)
-            cv2.waitKey(1)
-            cv2.destroyAllWindows()
-            time.sleep(0.05)
-
             #print("circles", circles)
 
         except:
@@ -116,9 +112,6 @@ while (True):
                      (int(width/2), height), (0, 0, 255), 4)
 
             cv2.imshow("Houghcircles", frame)
-            cv2.waitKey(1)
-            cv2.destroyAllWindows()
-
             time.sleep(0.05)
 
     else:

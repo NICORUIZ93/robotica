@@ -6,7 +6,6 @@ import numpy as np
 import time
 cap = cv2.VideoCapture(0)
 
-
 factorDimension = 100
 
 cap.set(3, 3000)

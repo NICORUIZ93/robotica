@@ -1,9 +1,9 @@
 import cv2
 
-classes = {0: "pelota", 1: "cancha"}
+
 clasificacion = cv2.CascadeClassifier("./modelos/classifier/cascade.xml")
 
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 
 while True:
     ret, frame = cap.read()
